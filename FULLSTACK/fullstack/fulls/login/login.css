@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* pie */
+#contenido{
+    margin:0 auto;
+    width:100%;
+}
+#pie{ 
+    background-color:#bbb;
+    clear:both;
+    color:#900;
+    padding:10px;
+    text-align:center;
+}

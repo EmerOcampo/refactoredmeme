@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<!-- CSS -->
+		<!-- body -->
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+		body {
+			height: 200vh;
+			background-image:white; 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+	</style>
+			<!-- LOGO INS (IMG) -->
+	<style>
+		.logo{
+			width: 200px;
+			height: 115px;
+			float: left;
+			padding: 8px;
+			margin-left: 50px;
+		}
+	</style>
+			
+			<!-- DISTANCIAS (MENU/HEADER) -->
+		<style>
+			header{
+				position: relative;
+				min-width: 900px;
+				padding: 15px 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: white;
+			}
+		</style>
+		
+		<style>
+			.cont-ul{
+					left: 40%;
+					display: flex;
+					align-items: center;
+					margin-right: px;
+					position: absolute;
+			}
+		</style>
+
+		<style>
+			.buscador{
+				position: absolute;
+				right: 10px;
+			}
+			.buscador input{
+				outline: none;
+				box-sizing: border-box;
+				height: 80px;
+				width: 80px;
+				padding: 0 20px;
+				color: black;
+				border-radius: 50px;
+				font-size: 20px;
+				border: 1px solid red;
+				transition: all .7s ease;
+			}
+
+			::pleaceholder {
+				color: grey;
+			}
+
+			.btn {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 80px;
+				height: 80px;
+				background-color: red;
+				line-height: 80px;
+				border-radius: 50%;
+				text-align: center;
+				cursor: pointer;
+				transition: .5s;
+			}
+
+			.btn i {
+				font-size: 25px;
+				color: white;
+				line-height: 80px;
+				transition: all .7s ease;
+			}
+
+			.buscador:hover input {
+				width: 300px;
+			}
+
+			.buscador:hover i{
+				transform: rotate(-360deg);
+			}
+			.btn:hover {
+				background-color: red;
+			}
+		</style>
+
+		<style>
+			li{
+				text-decoration: none;
+				list-style: none;
+			}
+			.cont-ul > li a{
+				text-decoration: none;
+				display: block;
+				color: black;
+				font-weight: 550;
+			}
+			.cont-ul > li{
+				list-style: none;
+				cursor: pointer;
+				padding: 20px;
+				transition: all 0.4s ease;	
+			}
+			.cont-ul > 	li:hover{
+				background-color: #DF0309;
+			}
+
+		</style>							
+		<style>
+			.ul-second{
+
+				position: absolute;
+				display: none;
+				transform: translateY(20px);
+			}
+			.ul-second > li{
+				border-bottom: solid 3px #fff;
+				text-align: center;
+				background-color: white;
+				padding: 20px;
+				width: 190px;
+				transform: translateX(-20px);
+				padding: 20px;
+			}
+			.ul-second > li:hover{
+				background-color: #DF0309;
+			}
+			.develop:hover > .ul-second{
+				display: block;
+			}
+			
+
+		</style>
+
+
+<body>
+		<header>
+				<a href="principal.html"><img class="logo" src="imagenes/logos/vcplogo.png"></a>
+					<ul class="cont-ul">
+						
+						<!-- INICIO -->
+						<li class="develop"><a href="principal.html">Inicio</a></li>
+
+							<!-- CONTACTOS -->
+						<li class="develop"><a href="#">???</a>
+							<ul class="ul-second">
+								<li class="back"><a href="#">???		</a></li>
+								<li class="front"><a href="#">???	</a></li>
+								<li class="front"><a href="#">???	</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="#">???</li></a>
+						<ul class="">
+						</ul>
+						<li><a href="#">???</li></a>
+						<ul class="">
+						</ul>
+					</ul>
+					
+
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<div class="buscador">
+						<input type="text" placeholder="Buscar">
+						<div class="btn">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+		</header>
+	
+	<div class="fondo1">
+    	<ul>
+    		<li><img src="imagenes/fondos/fondo1.png" width="100%" height=""></li>
+    	</ul>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<!-- CSS -->
+		<!-- body -->
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+		body {
+			height: 200vh;
+			background-color: white; 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+	</style>
+			<!-- LOGO INS (IMG) -->
+	<style>
+		.logo{
+			width: 180px;
+			height: 75px;
+			float: left;
+			padding: 8px;
+			margin-left: 50px;
+		}
+	</style>
+			
+			<!-- DISTANCIAS (MENU/HEADER) -->
+		<style>
+			header{
+				position: relative;
+				width: 100%;
+				min-width: 900px;
+				padding: 15px 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: rgba(0, 0, 0, .78);
+			}
+		</style>
+		
+		<style>
+			.cont-ul{
+					right: 0;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-right: 20px;
+					position: absolute;
+			}
+		</style>
+
+		<style>
+			li{
+				text-decoration: none;
+				list-style: none;
+			}
+			.cont-ul > li a{
+				text-decoration: none;
+				display: block;
+				color: white;
+				font-weight: 550;
+			}
+			.cont-ul > li{
+				list-style: none;
+				cursor: pointer;
+				padding: 20px;
+				transition: all 0.4s ease;	
+			}
+			.cont-ul > 	li:hover{
+				background-color: #008849;
+			}
+
+		</style>							
+		<style>
+			.ul-second{
+
+				position: absolute;
+				display: none;
+				transform: translateY(20px);
+			}
+			.ul-second > li{
+				border-bottom: solid 3px #fff;
+				text-align: center;
+				background-color: rgba(0, 0, 0, .85);
+				padding: 20px;
+				width: 190px;
+				transform: translateX(-20px);
+				padding: 20px;
+			}
+			.ul-second > li:hover{
+				background-color: #008849;
+			}
+			.develop:hover > .ul-second{
+				display: block;
+			}
+			
+			.sub{ 
+    			background-color: rgba(0, 0, 0, .85);
+    			width: 100%;
+    			bottom: 0;
+    			padding: 5px;
+    			position: fixed;
+    			text-align: center;
+    			color: white;
+				font-weight: 550;
+			}
+		</style>
+<!-- IMAGENES -->
+
+<style>
+
+.slider2{
+   width: 1000px;
+   margin: 30px auto;
+   overflow: hidden;
+   border: solid 1.5px black;
+}
+
+.slider2 > ul{
+   list-style: none;
+   width: 2800px;
+   display: flex;
+
+   animation: slide 20s infinite alternate;
+}
+
+@keyframes slide {
+   0% {margin-left: 0px;}
+   20% {margin-left: 0px;}
+
+   25% {margin-left: -1000px;}
+   45% {margin-left: -1000px;}
+
+   50% {margin-left: -200px;}
+   70% {margin-left: -2000px;}
+
+   75% {margin-left: -3000px;}
+   100% {margin-left: -3000px;}
+}
+</style>
+
+<style>
+*{
+	box-sizing: border-box;
+}
+.slider{
+	width: 540px;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10%;
+	border: 1.5px solid ;
+}
+.slider > ul{
+	width: 400%;
+	height: 22.2%;
+	display: flex;
+	list-style: none;
+	order: 1;
+	transition: all 0.9s;
+	animation: slider 20s infinite;
+}
+.slider > input[type="radio"]{
+	display: none;
+}
+.slider > input[type="radio"] + label{
+	display: block;
+	width: 33.3333333%;
+	height: 110px;
+	cursor: pointer;
+	order: 2;
+	border: 1px solid #000;
+}
+
+#sbutton1 + label{
+	background: url(c1.jpg);
+	background-size: 100% 100%;
+}
+#sbutton2 + label{
+	background: url(c2.jpg);
+	background-size: 100% 100%;
+}
+#sbutton3 + label{
+	background: url(c3.jfif);
+	background-size: 100% 100%;
+}
+	#sbutton1:checked ~ ul{
+	margin-left: 0;
+	animation: none;
+}
+#sbutton2:checked ~ ul{
+	margin-left: -100%;
+	animation: none;
+}
+#sbutton3:checked ~ ul{
+	margin-left: -200%;
+	animation: none;
+}
+@keyframes slider{
+	0%, 20%{
+		margin-left: 0;
+	}
+	25%, 40%{
+		margin-left: -100%;
+	}
+	45%, 70%{
+			margin-left: -200%;
+	}
+}
+</style>
+
+
+<body>
+		<header>
+				<a href="principal.html"><img class="logo" src="logo1.png"></a>
+					<ul class="cont-ul">
+						
+						<!-- INICIO -->
+						<li class="develop"><a href="#">inicio</a>
+							<ul class="ul-second">
+								<li class="back"><a href="inicio de sesion2.html">Iniciar sesion</a></li>
+								<li class="front"><a href="crear cuenta.html">Registrarse</a></li>
+							</ul>
+						</li>
+
+							<!-- CONTACTOS -->
+						<li class="develop"><a href="#">Contacto</a>
+							<ul class="ul-second">
+								<li class="back"><a href="inicio de sesion2.html">Telefono</a></li>
+								<li class="front"><a href=>Instagram</	a></li>
+								<li class="front"><a href="mailto:inms@gmail.com">Gmail	</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="#">??????</li></a>
+						<ul class="">
+						</ul>
+						<li><a href="#">??????</li></a>
+						<ul class="">
+						</ul>
+					</ul>
+		</header>
+	
+	<div class="slider2">
+    	<ul>
+    		<li><img src="foto1.jpeg" width="1000px" height="600px"></li>
+    		<li><img src="foto2.jpg" width="1000px" height="600px"></li>
+    		<li><img src="foto3.jpg" width="1000px" height="600px"></li>
+    		<li><img src="foto4.jpg" width="1000px" height="600px"></li>
+    	</ul>
+	</div>
+
+		<div class="slider">
+		<input type="radio" id="sbutton1" name="sradio">
+		<label for="sbutton1"></label>
+		<input type="radio" id="sbutton2" name="sradio">
+		<label for="sbutton2"></label>
+		<input type="radio" id="sbutton3" name="sradio">
+		<label for="sbutton3"></label>
+		<ul>
+			<li><a href="c1.html" target="_blank"><img src="c1.jpg" height="288" width="537"></a></li>
+			<li><a href="c2.html" target="_blank"><img src="c2.jpg" height="288" width="537"></a></li>
+			<li><a href="c3.html" target="_blank"><img src="c3.jfif" height="288" width="537"></a></li>
+		</ul>
+	</div>
+
+
+	<div class="sub">
+        <center><table>
+        	<tr>
+        		<td>
+        			<br><img src="logo1.png" width="140"></br>
+        		</td>
+        		<td>
+        			<h3>Contacto</h3><p> <img src="ub.jpg" width="28px" height="28px"> Av. Carcano 648 <br><img src="gmail.jpg" width="28px" height="28px">inms@gmail.com <br> <img src="num.jpg" width="28px" height="28px">Tel. 3541-200602</p>
+        		</td>
+        	</tr>
+        </table></center>
+      </div>
+
+</body>
+</html>
