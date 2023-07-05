@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="shortcut icon" href="./img/majinicon.jpg" />
+  <title>Inmuebles</title>
+  <link rel="stylesheet" href="casa.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="caja">
+		<nav class="navbar">
+			<div>
+				<a href="#" class="logo"><img src="imagenes/Logos/attk.png"></a>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li class="active"><a href="principal.html">Inicio</a></li>
+					<li><a href="casa.html">Alojamiento</a></li>
+					<li><a href="#">Informacion</a></li>
+					<li><a href="equipo.html">Nosotros</a></li>
+					<li><a href="#">Ayuda</a></li>
+				</ul>
+			</div>
+
+			<div class="subinicio">
+				<div class="iniciosesion">
+					<a href="index.php"><img src="imagenes/logos/iniciar sesion.png"></a>
+				</div>
+			</div>
+
+			<img src="Imagenes/Logos/menu-btn.png" alt="menuhamburger" class="menu-hamburger">
+		</nav>
+	</header>
+
+  <section id="hero">
+    <h1 class="animh1">"Tu lugar <br />preferido"</h1>
+  </section>
+
+  <section id="Contratos" style="background-color: rgb(245, 245, 245)">
+    <div class="container">
+      <h3 style="color: black; text-align: center;">Propiedades</h2>
+        <div class="texto">
+
+
+        <div class="carta" style="margin-bottom: 5%;">
+            <a href="tarjeta/formulario-tarjeta-credito-3d-master/index.html"><img src="hotel1.jpg" style="width: 30%; margin: -5%;">
+            </a><p class="carta"> Dirección: Juan B. Justo, Sgto Cabral 108 esquina, X5152 Villa Carlos Paz, Córdoba
+            </p><p>Teléfono: 03541 43-4702</p></div>
+
+        <div class="carta" style="margin-bottom: 5%;">
+            <a href="tarjeta/formulario-tarjeta-credito-3d-master/index.html"><img src="hotel2.jpg" style="width: 30%; margin: -5%;">
+            </a><p class="carta"> 
+                Dirección: Av. San Martín 1887, X5152 Villa Carlos Paz, Córdoba
+            </p><p>Teléfono: 03541 42-1242</p></div>
+
+        <div class="carta" style="margin-bottom: 5%;">
+            <a href="tarjeta/formulario-tarjeta-credito-3d-master/index.html"><img src="hotel3.jpg" style="width: 30%; margin: -5%;">
+            </a><p class="carta"> 
+                Dirección: Gdor. Álvarez 600, X5152 Villa Carlos Paz, Córdoba
+            </p><p>Teléfono: 03541 42-4931</p></div>
+
+        </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="containerb">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Informacion</h4>
+                <ul>
+                    <li><a href="equipo.html">Miembros</a></li>
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#">Terminos Y Condiciones</a></li>
+                    <li><a href="#">Asociados</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Navegar</h4>
+                <ul>
+                    <li><a href="casa.html">Inmuebles</a></li>
+                    <li><a href="casa.html">Hoteles</a></li>
+                    <li><a href="casa.html">Venta</a></li>
+                    <li><a href="casa.html">Propiedades</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Clientes</h4>
+                <ul>
+                    <li><a href="index.php">Iniciar Sesion</a></li>
+                    <li><a href="indexform.html">Registrarse</a></li>
+                    <li><a href="principal.html">Volver al inicio</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Siguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Municipiovcp/?locale=es_LA"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/villacarlospazoficial/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/secturismovcpaz?lang=es"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+<script>
+	const menuHamburger = document.querySelector(".menu-hamburger")
+	const navLinks = document.querySelector(".nav-links")
+	const iniciosesion = document.querySelector(".iniciosesion")
+	const subinicio = document.querySelector(".subinicio")
+	const sesion = document.querySelector(".sesion")
+
+	menuHamburger.addEventListener('click', () => {
+		navLinks.classList.toggle('mobile-menu')
+		iniciosesion.classList.toggle('mobile-menu')
+		subinicio.classList.toggle('mobile-menu')
+		sesion.classList.toggle('mobile-menu')
+	})
+
+	window.addEventListener("scroll", function () {
+		var navbar = document.querySelector(".navbar");
+		navbar.classList.toggle("abajo", window.scrollY > 0);
+	})
+</script>
+</html>
